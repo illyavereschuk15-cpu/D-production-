@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
+<meta property="og:image" content="assets/brand/og_image_1200x630.png">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Darkinsider — Illia Vereshchuk, director and cinematographer</title>
+<meta name="description" content="Darkinsider is the film work of Illia Vereshchuk, a director and cinematographer based in Munich. Automotive films, image films and short films.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..100,300..500&family=Jost:wght@300;500&display=swap">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="#intro" aria-label="Darkinsider, back to the start">
+    <svg viewBox="0 0 100 100" aria-hidden="true"><path fill-rule="evenodd" fill="#F4F5F7" d="M15 10 H50 C75 10 90 28 90 50 C90 72 75 90 50 90 H15 Z M30.1 40 H77.9 V60 H30.1 Z"/><circle cx="72" cy="25" r="3.7" fill="#E8201A"/></svg>
+    <span class="brand-word">DARKINSIDER</span>
+  </a>
+  <nav class="hnav" aria-label="Main">
+    <a class="opt" href="#work">Work</a>
+    <button class="opt" id="navAbout">About</button>
+    <a href="#finale">Contact</a>
+    <button class="sound" id="soundBtn" aria-pressed="false"><i aria-hidden="true"><b></b><b></b><b></b></i><span>Sound off</span></button>
+  </nav>
+</header>
+
+<main>
+  <!-- INTRO: the D projects, scrolling flies into the projection and the showreel takes over -->
+  <section class="intro" id="intro" aria-label="Darkinsider intro and showreel">
+    <div class="stage" id="istage">
+      <div class="scene" id="iscene" aria-hidden="true">
+        <svg class="beam" id="ibeam" viewBox="0 0 1280 720">
+          <defs><linearGradient id="ibeamG" x1="0" x2="1"><stop offset="0" stop-color="#DCE6F7" stop-opacity=".55"/><stop offset=".65" stop-color="#DCE6F7" stop-opacity=".2"/><stop offset="1" stop-color="#DCE6F7" stop-opacity=".24"/></linearGradient>
+          <filter id="ibeamSoft" x="-10%" y="-30%" width="120%" height="160%"><feGaussianBlur stdDeviation="3"/></filter></defs>
+          <polygon points="461,343 700,268 712,268 712,452 700,452 461,377" fill="url(#ibeamG)" filter="url(#ibeamSoft)"/>
+        </svg>
+        <canvas class="dustc" id="idust" width="1280" height="720"></canvas>
+        <div class="screen" id="iscreen"><div class="halo"></div><div class="light"></div><div class="words" id="iwords"><b>DARKINSIDER</b><small>PRODUCTION</small></div></div>
+        <div class="dmark" id="idmark">
+          <svg viewBox="0 0 100 100">
+            <defs><linearGradient id="islotG" x1="0" x2="1"><stop offset="0" stop-color="#DDE7F8" stop-opacity=".28"/><stop offset="1" stop-color="#F4F8FF" stop-opacity=".62"/></linearGradient><filter id="islotGlow" x="-50%" y="-200%" width="200%" height="500%"><feGaussianBlur stdDeviation="3.2"/></filter><filter id="idotGlow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="2.4"/></filter></defs>
+            <rect class="slot" x="29.4" y="39.3" width="49.2" height="21.4" fill="url(#islotG)"/>
+            <path class="dshape" fill-rule="evenodd" fill="#E6ECF5" d="M15 10 H50 C75 10 90 28 90 50 C90 72 75 90 50 90 H15 Z M30.1 40 H77.9 V60 H30.1 Z"/>
+            <g opacity=".28"><rect class="slot" x="30.1" y="40" width="47.8" height="20" fill="#FFFFFF" filter="url(#islotGlow)"/></g>
+            <circle class="ihalo" cx="72" cy="25" r="5.6" fill="#E8201A" filter="url(#idotGlow)"/>
+            <circle class="dot" cx="72" cy="25" r="3.7" fill="#E8201A"/>
+          </svg>
+        </div>
+        <div class="credit" id="icredit">CAMERA AND DIRECTION BY ILLIA VERESHCHUK</div>
+      </div>
+      <div class="ireel" id="ireel" aria-hidden="true">
+        <div class="road"></div>
+        <div class="streak w" style="top:63%; width:22vw; animation-delay:0s"></div>
+        <div class="streak w" style="top:66%; width:14vw; animation-delay:1.6s; animation-duration:3.6s"></div>
+        <div class="streak r" style="top:70%; width:18vw; animation-delay:.8s; animation-duration:5.4s"></div>
+        <div class="streak w" style="top:58%; width:9vw; animation-delay:3.1s; animation-duration:6.2s"></div>
+        <div class="streak r" style="top:73%; width:12vw; animation-delay:2.4s; animation-duration:4.4s"></div>
+        <span class="note">Showreel placeholder</span>
+      </div>
+      <div class="ifoot" id="ifoot">
+        <div><strong>Showreel</strong>Illia Vereshchuk, director, cinematographer, editor</div>
+        <div class="down" aria-hidden="true">Scroll to the work<i></i></div>
+      </div>
+      <div class="ihint" id="ihint" aria-hidden="true">Scroll<i></i></div>
+      <div class="reveal" id="ireveal" aria-hidden="true"><div class="matD" id="imat"><svg class="matsvg" viewBox="0 0 100 100" aria-hidden="true">
+            <defs>
+              <filter id="i-mFoil" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.045" numOctaves="4" seed="7" result="n"/><feDiffuseLighting in="n" surfaceScale="5" lighting-color="#E9EEF6" result="d"><feDistantLight azimuth="235" elevation="38"/></feDiffuseLighting><feSpecularLighting in="n" surfaceScale="5" specularConstant="1.1" specularExponent="22" lighting-color="#ffffff" result="s"><feDistantLight azimuth="235" elevation="38"/></feSpecularLighting><feComposite in="s" in2="d" operator="arithmetic" k2="1" k3="0.9" result="l"/><feComposite in="l" in2="SourceAlpha" operator="in"/></filter>
+              <filter id="i-mPuff" x="-5%" y="-5%" width="110%" height="110%"><feGaussianBlur in="SourceAlpha" stdDeviation="5.5" result="b"/><feSpecularLighting in="b" surfaceScale="9" specularConstant="1.2" specularExponent="26" lighting-color="#ffffff" result="s"><fePointLight x="28" y="14" z="55"/></feSpecularLighting><feComposite in="s" in2="SourceAlpha" operator="in" result="si"/><feDiffuseLighting in="b" surfaceScale="9" lighting-color="#ffffff" result="d"><feDistantLight azimuth="225" elevation="55"/></feDiffuseLighting><feComposite in="SourceGraphic" in2="d" operator="arithmetic" k1="1" result="shade"/><feComposite in="shade" in2="SourceAlpha" operator="in" result="sh"/><feMerge><feMergeNode in="sh"/><feMergeNode in="si"/></feMerge></filter>
+              <filter id="i-mPlush" x="-6%" y="-6%" width="112%" height="112%"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3" result="f"/><feDisplacementMap in="SourceGraphic" in2="f" scale="3.2" result="fz"/><feDiffuseLighting in="f" surfaceScale="1.6" lighting-color="#ffffff" result="t"><feDistantLight azimuth="210" elevation="62"/></feDiffuseLighting><feComposite in="fz" in2="t" operator="arithmetic" k1="1.15" result="c"/><feGaussianBlur in="SourceAlpha" stdDeviation="4" result="b"/><feDiffuseLighting in="b" surfaceScale="6" lighting-color="#ffffff" result="sh"><feDistantLight azimuth="225" elevation="50"/></feDiffuseLighting><feComposite in="c" in2="sh" operator="arithmetic" k1="1.1" result="c2"/><feComposite in="c2" in2="fz" operator="in"/></filter>
+              <pattern id="i-mBubbles" width="9" height="9" patternUnits="userSpaceOnUse"><rect width="9" height="9" fill="#9FB0C9"/><circle cx="4.5" cy="4.5" r="3.6" fill="url(#i-mBubG)"/><circle cx="3.4" cy="3.3" r="1" fill="#fff" opacity=".9"/></pattern>
+              <radialGradient id="i-mBubG" cx="40%" cy="38%" r="65%"><stop offset="0" stop-color="#F6F8FC"/><stop offset=".55" stop-color="#C9D3E3"/><stop offset="1" stop-color="#7D8EAB"/></radialGradient>
+              <filter id="i-mBubbleLight" x="-5%" y="-5%" width="110%" height="110%"><feGaussianBlur in="SourceAlpha" stdDeviation="4" result="b"/><feSpecularLighting in="b" surfaceScale="6" specularConstant=".9" specularExponent="30" lighting-color="#fff" result="s"><fePointLight x="30" y="15" z="60"/></feSpecularLighting><feComposite in="s" in2="SourceAlpha" operator="in" result="si"/><feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="si"/></feMerge></filter>
+            </defs>
+            <g class="mat m-foil"><path fill-rule="evenodd" fill="#000" filter="url(#i-mFoil)" d="M15 10 H50 C75 10 90 28 90 50 C90 72 75 90 50 90 H15 Z M30.1 40 H77.9 V60 H30.1 Z"/></g>
+            <g class="mat m-bubble"><path fill-rule="evenodd" fill="url(#i-mBubbles)" filter="url(#i-mBubbleLight)" d="M15 10 H50 C75 10 90 28 90 50 C90 72 75 90 50 90 H15 Z M30.1 40 H77.9 V60 H30.1 Z"/></g>
+            <g class="mat m-puff"><path fill-rule="evenodd" fill="#D8202A" filter="url(#i-mPuff)" d="M15 10 H50 C75 10 90 28 90 50 C90 72 75 90 50 90 H15 Z M30.1 40 H77.9 V60 H30.1 Z"/></g>
+            <g class="mat m-plush"><path fill-rule="evenodd" fill="#1E2D57" filter="url(#i-mPlush)" d="M15 10 H50 C75 10 90 28 90 50 C90 72 75 90 50 90 H15 Z M30.1 40 H77.9 V60 H30.1 Z"/></g>
+          </svg></div></div>
+    </div>
+  </section>
+
+  <!-- WORK: drive-mode selector + carousel driven by vertical scroll -->
+  <section class="work" id="work" aria-label="Work">
+    <div class="pin">
+      <div class="modes">
+        <div class="knob-wrap" id="knobWrap">
+          <svg class="knob" id="knob" viewBox="0 0 100 100" role="presentation">
+            <defs><filter id="kGlow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="2.2"/></filter></defs>
+            <circle class="ring" cx="50" cy="50" r="49"/>
+            <g class="ticks" id="ticks"></g>
+            <g transform="translate(50 50) scale(.62) translate(-52.5 -50)">
+              <path fill-rule="evenodd" fill="#F4F5F7" d="M15 10 H50 C75 10 90 28 90 50 C90 72 75 90 50 90 H15 Z M30.1 40 H77.9 V60 H30.1 Z"/>
+            </g>
+            <g class="needle" id="needle"><circle class="glow" cx="93" cy="50" r="4.2" fill="#E8201A" filter="url(#kGlow)"/><circle cx="93" cy="50" r="2.6" fill="#E8201A"/></g>
+          </svg>
+          <ul class="mode-list" id="modeList" role="radiogroup" aria-label="Drive mode: choose a category"></ul>
+        </div>
+        <span class="mode-cap"><i></i>Focus to choose a project</span>
+      </div>
+      <div class="viewport">
+        <div class="track" id="track"></div>
+        <div class="progress" aria-hidden="true"><span id="bar"></span><em id="count">01 / 03</em></div>
+      </div>
+      <div class="clock" aria-label="Local time in Munich"><span id="clock">MUNICH 00:00:00</span><i></i></div>
+    </div>
+  </section>
+
+  <!-- FINALE: zoom out from the last film to the D that projected it -->
+  <section class="finale" id="finale" aria-labelledby="ask-title">
+    <div class="pin" id="fpin">
+      <div class="scene" id="scene" aria-hidden="true">
+        <svg class="beam" viewBox="0 0 1280 720">
+          <defs><linearGradient id="beamG" x1="0" x2="1"><stop offset="0" stop-color="#DCE6F7" stop-opacity=".55"/><stop offset=".65" stop-color="#DCE6F7" stop-opacity=".2"/><stop offset="1" stop-color="#DCE6F7" stop-opacity=".24"/></linearGradient>
+          <filter id="beamSoft" x="-10%" y="-30%" width="120%" height="160%"><feGaussianBlur stdDeviation="3"/></filter></defs>
+          <polygon points="461,343 700,268 712,268 712,452 700,452 461,377" fill="url(#beamG)" filter="url(#beamSoft)"/>
+        </svg>
+        <canvas class="dustc" id="fdust" width="1280" height="720"></canvas>
+        <div class="dmark">
+          <svg viewBox="0 0 100 100">
+            <defs><linearGradient id="fslotG" x1="0" x2="1"><stop offset="0" stop-color="#DDE7F8" stop-opacity=".28"/><stop offset="1" stop-color="#F4F8FF" stop-opacity=".62"/></linearGradient><filter id="slotGlow" x="-50%" y="-200%" width="200%" height="500%"><feGaussianBlur stdDeviation="3.2"/></filter><filter id="dotGlow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="2.4"/></filter></defs>
+            <rect x="29.4" y="39.3" width="49.2" height="21.4" fill="url(#fslotG)"/>
+            <path fill-rule="evenodd" fill="#E6ECF5" d="M15 10 H50 C75 10 90 28 90 50 C90 72 75 90 50 90 H15 Z M30.1 40 H77.9 V60 H30.1 Z"/>
+            <rect x="30.1" y="40" width="47.8" height="20" fill="#FFFFFF" filter="url(#slotGlow)" opacity=".28"/>
+            <circle class="dothalo" cx="72" cy="25" r="5.6" fill="#E8201A" filter="url(#dotGlow)"/>
+            <circle cx="72" cy="25" r="3.7" fill="#E8201A"/>
+          </svg>
+        </div>
+      </div>
+      <div class="reveal" id="freveal" aria-hidden="true"><div class="matD" id="fmat"><svg class="matsvg" viewBox="0 0 100 100" aria-hidden="true">
+            <defs>
+              <filter id="f-mFoil" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.045" numOctaves="4" seed="7" result="n"/><feDiffuseLighting in="n" surfaceScale="5" lighting-color="#E9EEF6" result="d"><feDistantLight azimuth="235" elevation="38"/></feDiffuseLighting><feSpecularLighting in="n" surfaceScale="5" specularConstant="1.1" specularExponent="22" lighting-color="#ffffff" result="s"><feDistantLight azimuth="235" elevation="38"/></feSpecularLighting><feComposite in="s" in2="d" operator="arithmetic" k2="1" k3="0.9" result="l"/><feComposite in="l" in2="SourceAlpha" operator="in"/></filter>
+              <filter id="f-mPuff" x="-5%" y="-5%" width="110%" height="110%"><feGaussianBlur in="SourceAlpha" stdDeviation="5.5" result="b"/><feSpecularLighting in="b" surfaceScale="9" specularConstant="1.2" specularExponent="26" lighting-color="#ffffff" result="s"><fePointLight x="28" y="14" z="55"/></feSpecularLighting><feComposite in="s" in2="SourceAlpha" operator="in" result="si"/><feDiffuseLighting in="b" surfaceScale="9" lighting-color="#ffffff" result="d"><feDistantLight azimuth="225" elevation="55"/></feDiffuseLighting><feComposite in="SourceGraphic" in2="d" operator="arithmetic" k1="1" result="shade"/><feComposite in="shade" in2="SourceAlpha" operator="in" result="sh"/><feMerge><feMergeNode in="sh"/><feMergeNode in="si"/></feMerge></filter>
+              <filter id="f-mPlush" x="-6%" y="-6%" width="112%" height="112%"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3" result="f"/><feDisplacementMap in="SourceGraphic" in2="f" scale="3.2" result="fz"/><feDiffuseLighting in="f" surfaceScale="1.6" lighting-color="#ffffff" result="t"><feDistantLight azimuth="210" elevation="62"/></feDiffuseLighting><feComposite in="fz" in2="t" operator="arithmetic" k1="1.15" result="c"/><feGaussianBlur in="SourceAlpha" stdDeviation="4" result="b"/><feDiffuseLighting in="b" surfaceScale="6" lighting-color="#ffffff" result="sh"><feDistantLight azimuth="225" elevation="50"/></feDiffuseLighting><feComposite in="c" in2="sh" operator="arithmetic" k1="1.1" result="c2"/><feComposite in="c2" in2="fz" operator="in"/></filter>
+              <pattern id="f-mBubbles" width="9" height="9" patternUnits="userSpaceOnUse"><rect width="9" height="9" fill="#9FB0C9"/><circle cx="4.5" cy="4.5" r="3.6" fill="url(#f-mBubG)"/><circle cx="3.4" cy="3.3" r="1" fill="#fff" opacity=".9"/></pattern>
+              <radialGradient id="f-mBubG" cx="40%" cy="38%" r="65%"><stop offset="0" stop-color="#F6F8FC"/><stop offset=".55" stop-color="#C9D3E3"/><stop offset="1" stop-color="#7D8EAB"/></radialGradient>
+              <filter id="f-mBubbleLight" x="-5%" y="-5%" width="110%" height="110%"><feGaussianBlur in="SourceAlpha" stdDeviation="4" result="b"/><feSpecularLighting in="b" surfaceScale="6" specularConstant=".9" specularExponent="30" lighting-color="#fff" result="s"><fePointLight x="30" y="15" z="60"/></feSpecularLighting><feComposite in="s" in2="SourceAlpha" operator="in" result="si"/><feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="si"/></feMerge></filter>
+            </defs>
+            <g class="mat m-foil"><path fill-rule="evenodd" fill="#000" filter="url(#f-mFoil)" d="M15 10 H50 C75 10 90 28 90 50 C90 72 75 90 50 90 H15 Z M30.1 40 H77.9 V60 H30.1 Z"/></g>
+            <g class="mat m-bubble"><path fill-rule="evenodd" fill="url(#f-mBubbles)" filter="url(#f-mBubbleLight)" d="M15 10 H50 C75 10 90 28 90 50 C90 72 75 90 50 90 H15 Z M30.1 40 H77.9 V60 H30.1 Z"/></g>
+            <g class="mat m-puff"><path fill-rule="evenodd" fill="#D8202A" filter="url(#f-mPuff)" d="M15 10 H50 C75 10 90 28 90 50 C90 72 75 90 50 90 H15 Z M30.1 40 H77.9 V60 H30.1 Z"/></g>
+            <g class="mat m-plush"><path fill-rule="evenodd" fill="#1E2D57" filter="url(#f-mPlush)" d="M15 10 H50 C75 10 90 28 90 50 C90 72 75 90 50 90 H15 Z M30.1 40 H77.9 V60 H30.1 Z"/></g>
+          </svg></div></div>
+      <div class="projection" id="proj" aria-hidden="true"><div class="still s-wed1" id="projStill"></div><div class="shine"></div><div class="pcap" id="pcap"><h3 class="display" id="projTitle"></h3></div><div class="titlecard" id="titlecard"><div class="tc-light"></div><div class="tc-words"><b>DARKINSIDER</b><small>PRODUCTION</small></div></div></div>
+      <div class="ask" id="ask">
+        <div class="q"><h2 class="display" id="ask-title">Have an interesting project?</h2></div>
+        <div class="choices q" id="choices">
+          <button class="choice yes" id="yesBtn">Yes</button>
+          <button class="choice no" id="noBtn">No</button>
+        </div>
+        <p class="tease q" id="tease" aria-live="polite"></p>
+        <div class="reply">
+          <h2 class="display">Let's make it.</h2>
+          <div class="contacts">
+            <a class="mail" href="mailto:darkinsidercontact@gmail.com">darkinsidercontact@gmail.com</a>
+            <a class="phone" href="tel:+4915126889750">+49 151 26 8897 50</a>
+          </div>
+        </div>
+      </div>
+      <nav class="fsocial" id="fsocial" aria-label="Social media">
+        <a href="https://www.instagram.com/darkinsider_prod" target="_blank" rel="noopener">Instagram</a>
+        <a href="#" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://www.tiktok.com/@darkinsiderr" target="_blank" rel="noopener">TikTok</a>
+        <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+      </nav>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span>© 2026 Darkinsider, Illia Vereshchuk</span>
+  <nav aria-label="Legal"><button data-open="impressum">Impressum</button><button data-open="privacy">Privacy</button></nav>
+</footer>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+  <div class="mbar"><button class="mback" id="mClose"><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M9 2 L4 7 L9 12" fill="none" stroke="currentColor" stroke-width="1.4"/></svg><span id="mBackLabel">Back</span></button><span class="mpos" id="mPos"></span></div>
+  <div id="mBody"></div>
+</div>
+<div class="vf" aria-hidden="true"><span class="rec"><i></i>REC</span><span id="tc">00:00:00:00</span></div>
+<div class="cursor" id="cursor" aria-hidden="true">Play</div>
+<div class="grain" aria-hidden="true"></div>
+
+<script src="js/projects.js"></script>
+<script src="js/shaders/fluid.js"></script>
+<script src="js/liquid.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
